@@ -1,0 +1,678 @@
+.cuerpos{
+    margin: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s ease-out forwards;
+    }
+    
+    /* Transición de las páginas */
+    
+    @keyframes fadeInUp{
+    
+        from {opacity: 0;
+        transform: translateY(50px);
+    }
+    
+    to{opacity: 1;
+    transform: translateY(0);}
+    
+    }
+
+/* Fuentes */
+
+
+@font-face {
+    font-family: 'MiFuente5';
+    src: url(../Fuentes/Quicksand-VariableFont_wght.ttf);
+}
+
+
+header{
+    width: 100%;
+}
+
+.enlacesFooter{
+    margin: 15px;
+    padding: 20px;
+    font-family: 'MiFuente5';
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+    font-family: 'MiFuente5';
+    font-size: 23px;
+    margin-left: 80px;
+}
+
+/* Imagen logo enlace */
+
+#imagenLogoEnlace{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Efectos enlaces: subrayado */
+
+
+.efectosEnlaces{
+    display: inline-block;
+    position: relative;
+  }
+  
+.efectosEnlaces::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 20px;
+    left: 0;
+    background-color: #ffffff;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .efectosEnlaces:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .efectosEnlaces::after {
+    transform-origin: bottom right;
+  }
+  
+  .efectosEnlaces:hover::after {
+    transform-origin: bottom left;
+  }
+  .efectosEnlaces::after {
+    transform-origin: bottom center;
+  }
+  
+  .efectosEnlaces:hover::after {
+    transform-origin: bottom center;
+  }
+  
+  .efectosEnlaces::after {
+    transform-origin: bottom left;
+  }
+  .efectosEnlaces:hover::after {
+    transform-origin: bottom right;
+  }
+
+/* Footer */
+
+.cajaPiePaginaPrincipal{
+    font-family: 'MiFuente5';
+    font-size: 20px;
+}
+
+/* Div perteneciente a la caja que contiene los enlaces a las distintas páginas */
+
+.cajaEnlaces{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+/* Div perteneciente a la imagen del encabezado de la página principal */
+
+.cajaImagenEncabezado{
+    width: 100%; 
+}
+
+/* Imagen perteneciente a la imagen del encabezado de la página principal */
+
+#imagenBisbalConciertoPaginaPrincipal{
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+/* h3 perteneciente al título del video de la página principal */
+
+h4{
+    color: white;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+/* Div que incluye cancion página principal */
+
+.cajaVideoUltimaCancionPaginaPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+/* Div perteneciente que incluye las aplicaciones Sporty y AppleMusic */
+
+.cajaAplicacionesPaginaPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 75px;
+    width: 100%;
+}
+
+/* Id pertenecientes a las aplicaciones Spotify y AppleMusic */
+
+#spotify,#appleMusic{
+    width: 300px;
+    height: 400px;
+}
+
+/* Div perteneciente al footer de la página principal */
+
+.cajaPiePaginaPrincipal{
+    border-top: 1px solid white;
+}
+
+/* Parrafos pertenecientes a Spotify y AppleMusic */
+
+.parrafosSpotifyApple{
+    font-size: 22px;
+}
+
+#cajaSpotify{
+    margin-right: 150px;
+}
+
+#cajaAppleMusic{
+    margin-left: 150px;
+}
+
+#videoTuMeDelatas{
+    width: 1203px;
+    height: 602px;
+}
+
+/* BIOGRAFIA */
+
+/* Imagen biografía David Bisbal */
+
+#imagenBisbalBiografia{
+    width: 1100px;
+    margin-left: -185px;
+    margin-bottom: 50px;
+}
+
+#h5Biografia{
+    font-size: 20px;
+}
+
+/* Primera canción de su vida incluida en biografia */
+
+#cajaCancionBisbalPrimeraBiografia{
+    margin-left: 100px;
+    margin-top: -70px;
+}
+
+.cajaImagenEncabezadoBiografia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Section biografia */
+
+#sectionBiografia{
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'MiFuente5';
+    font-size: 22px;
+}
+
+/* Div que contiene la biografía de David Bisbal en la página Biografía */
+
+.biografiaDavidBisbal{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+}
+
+/* Párrafos pertenecientes a la biografía de David Bisbal */
+
+.parrafosBiografia{
+    text-align: justify;
+    font-size: 19px;
+}
+
+/* Líneas separatorias de las distintas secciones de la biografía de David Bisbal */
+
+.lineaBiografia{
+    border: 0.1px solid white;
+    width: 500px;
+}
+
+/* MÚSICA */
+
+/* Div que contiene los primeros tres álbum de la página Musica */
+
+.cajaDiscografiaMusica1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Div que contiene los últimos tres álbum de la página Musica */
+
+.cajaDiscografiaMusica2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Sección principal Musica para modificar titulos canciones */
+
+#sectionMusica{
+    font-size: 22px;
+}
+
+/* Imagenes de los álbums de la página Música */
+
+.imagenesMusica{
+    width: 380px;
+    height: 400px;
+    border: 1px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenesMusica:hover{
+    transform: scale(1.05);
+}
+
+/* Párrafos de los álbums de la página Música */
+
+.parrafosMusica{
+    margin-left: 120px;
+}
+
+/* COLABORACIONES */
+
+/* Encabezado */
+
+.cajaImagenEncabezadoColaboraciones{
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+#imagenBisbalColaboraciones{
+    width: 100%;
+}
+
+/* Videos de colaboraciones */
+
+
+
+#videoJuanMagan, #videoCarlosRivera, #videoAitana, #videoRvfv{
+    width: 950px;
+    height: 450px;
+    margin: 50px;
+
+}
+
+/* Videos izquierda-derecha */
+
+.letraMasPequeñaColaboraciones{
+    font-size: 20px;
+}
+
+.videoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px;
+    font-size: 23px;
+}
+
+.video{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.videoDerecha {
+    justify-content: flex-end;
+}
+
+/* Colocación párrafos descriptivos videos */
+
+.cajaParrafosColaboraciones{
+    margin-bottom: -90px;
+}
+
+.parrafosDerecha{
+    margin-left: 825px;
+}
+
+.parrafosIzquierda{
+    margin-left: 52px;
+}
+
+/* EVENTOS */
+
+.cajaImagenEncabezadoEventos{
+    width: 100%;
+}
+
+/* Líneas horizontales */
+
+.normalhr{
+    color: white;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+.especialhr{
+    width: 1100px;
+    color: white;
+    height: 0.1px;
+}
+
+/* Efecto botón comprar entradas */
+
+.efectoBoton{
+    
+
+        cursor:pointer;
+          position:relative;
+          padding:10px 20px;
+          background:white;
+          font-size:22px;
+          font-family: 'MiFuente5';
+          border-top-right-radius:10px;
+          border-bottom-left-radius:10px;
+          transition:all 1s;
+          &:after,&:before{
+            content:" ";
+            width:10px;
+            height:10px;
+            position:absolute;
+            border :0px solid #fff;
+            transition:all 1s;
+            }
+          &:after{
+            top:-1px;
+            left:-1px;
+            border-top:5px solid black;
+            border-left:5px solid black;
+          }
+          &:before{
+            bottom:-1px;
+            right:-1px;
+            border-bottom:5px solid black;
+            border-right:5px solid black;
+          }
+          &:hover{
+            border-top-right-radius:0px;
+          border-bottom-left-radius:0px;
+        background:rgba(0,0,0,.5);
+            color:white;
+            &:before,&:after{
+              
+              width:100%;
+              height:100%;
+              border-color:white;
+            }
+          }
+        }
+/* Colocación detalles entradas */
+
+.cajaPrincipalEntradas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'MiFuente5';
+    font-size: 22px;
+}
+
+.efectoBoton{
+    margin-left: 500px;
+}
+
+/* CONTACTO */
+
+/* Sección central contacto */
+
+#sectionContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'MiFuente5';
+    font-size: 22px;
+    margin-top: -25px;
+}
+
+/* Alineació redes sociales */
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+/* Imágenes redes sociales - bordes y anchos */
+
+.imagenesRedesSociales{
+    border-radius: 5px 5px 5px;
+}
+
+.anchoAltoRedes{
+    width: 750px;
+}
+
+/* Iconos redes sociales */
+
+.iconos{
+    width: 50px;
+    height: 50px;
+    margin-left: -70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.iconos:hover{
+    transform: scale(1.25);
+}
+
+#marginFooter{
+    margin-bottom: 150px;
+}
+
+#iframePrincipal{
+    width: 1000px;
+}
+
+/* AVISO LEGAL, POLITICA DE PRIVACIDAD Y COOKIES */
+
+/* Letras y margenes aviso legal */
+
+.cuerpoAvisoLegal{
+    margin: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.imagenLogoDatos{
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .cuerpos {
+        transform: translateY(20px);
+    }
+
+    a {
+        padding: 10px;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    
+
+    .enlacesFooter {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #imagenLogoEnlace {
+        width: 70px;
+        height: 70px;
+    }
+
+    #imagenBisbalConciertoPaginaPrincipal,
+    #imagenBisbalColaboraciones,
+    #imagenBisbalBiografia {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #videoTuMeDelatas,
+    #videoJuanMagan,
+    #videoCarlosRivera,
+    #videoAitana,
+    #videoRvfv {
+        width: 100%;
+        height: auto;
+    }
+
+    .cajaDiscografiaMusica1,
+    .cajaDiscografiaMusica2,
+    .cajaAplicacionesPaginaPrincipal,
+    .cajaPrincipalEntradas {
+        flex-direction: column;
+    }
+
+    .imagenesMusica {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .parrafosMusica {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .parrafosSpotifyApple {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #spotify, #appleMusic {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #cajaSpotify, #cajaAppleMusic {
+        margin: 0;
+    }
+
+    .biografiaDavidBisbal {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .lineaBiografia {
+        width: 80%;
+        margin: auto;
+    }
+
+    .videoSection {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .parrafosIzquierda, .parrafosDerecha {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .efectoBoton {
+        margin: 30px auto;
+        display: block;
+    }
+
+    #sectionContacto, .redesSociales {
+        font-size: 18px;
+    }
+
+    .anchoAltoRedes {
+        width: 90%;
+    }
+
+    .iconos {
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+    }
+
+    .cuerpoAvisoLegal {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .cajaEnlaces {
+        flex-direction: column;
+    }
+
+    .cajaImagenEncabezadoBiografia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .biografiaDavidBisbal{
+        margin-left: 19px;
+    }
+
+    #cajaCancionBisbalPrimeraBiografia{
+        margin-left: -10px;
+        width: 250px;
+    }
+
+    .imagenesMusica{
+        margin-left: -12px;
+    }
+
+    #imagenBisbalEventos{
+        width: 500px;
+    }
+
+    #iframePrincipal{
+        width:350px;
+    }
+}
+
